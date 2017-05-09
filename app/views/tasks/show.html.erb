@@ -1,0 +1,9 @@
+<%= render "partials/nav" %>
+
+<p><%= @task.task %></p>
+
+<p><%= @task.author %></p>
+
+<p>Posted on <%= @task.created_at.strftime("%B %e, %Y") %></p>
+
+<%= button_to "Delete Task", {:controller=>:tasks,:action=>:destroy, :id=>params[:id]}, :method=>:delete %>

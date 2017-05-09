@@ -1,0 +1,8 @@
+<h1>Edit Task</h1>
+<%= render "partials/nav" %>
+
+<%= form_for(@task) do |f| %>
+  <%= f.text_field :task, placeholder: "Task" %>
+  <%= f.text_field :author, placeholder: "Author" %>
+  <%= f.submit "Edit Task" %>
+<% end %>

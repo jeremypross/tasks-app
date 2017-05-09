@@ -1,6 +1,8 @@
 <h1>Tasks</h1>
-
+<%= render "partials/nav" %>
 <% @tasks.each do |task| %>
   <p><%= task.task %></p>
   <p><%= task.author %></p>
+  <a href="<%= task_path(task.id) %>">View Task</a>
+  <a href="/tasks/<%= task.id %>/edit">Edit Task</a>
 <% end %>

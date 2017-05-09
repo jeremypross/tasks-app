@@ -24,7 +24,7 @@ class TasksController < ApplicationController
   end
 
   def update
-    task_updated = Task.find(params[:id]).update_attributes(post_params)
+    task_updated = Task.find(params[:id]).update_attributes(task_params)
     redirect_to tasks_path
   end
 
