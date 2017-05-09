@@ -1,0 +1,5 @@
+<%= form_for(Task.new) do |f| %>
+<%= f.text_field :task, placeholder: "New Task" %><br />
+<%= f.text_field :author, placeholder: "Author" %><br />
+<%= f.submit "Submit Task" %>
+<% end %>
